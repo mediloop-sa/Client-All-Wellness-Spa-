@@ -1356,7 +1356,7 @@ nav a:hover {
     nav::-webkit-scrollbar { display: none; }
     nav a { margin: 0 10px; font-size: 0.7rem; }
 
-         /* Welcome & Hero */
+    /* Welcome & Hero */
     .hero-pre-title { font-size: 0.75rem; letter-spacing: 5px; }
     .serif-title { font-size: 2.5rem; letter-spacing: 2px; }
     .script-title { font-size: 5rem; margin-top: -15px; margin-left: 30px; }

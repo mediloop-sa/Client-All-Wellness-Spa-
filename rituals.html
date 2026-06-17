@@ -5,44 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediLoop | Rituals & Services</title>
     <link rel="stylesheet" href="globals.css">
+    <style>
+        nav { justify-content: space-between !important; padding: 30px 60px !important; }
+        @media (max-width: 768px) { nav { padding: 20px !important; flex-direction: column; gap: 20px; } }
+    </style>
 </head>
 <body>
 
-           <!-- PERFECTED NAVIGATION BAR -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="rituals.html">Rituals</a>
-        <a href="rewards.html">Rewards</a>
-        <a href="press.html">Press</a>
+        <a href="index.html" style="margin: 0; padding: 0;">
+            <img src="1000119984.png" alt="All Wellness Spa" style="height: 65px; filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,0.3));">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rituals.html">Rituals</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="press.html">Press</a>
+        </div>
     </nav>
 
-       <!-- NEW SPLIT EDITORIAL HERO -->
     <header class="hero subpage-hero-new">
         <div class="container hero-split">
-            <!-- Left Side: Typography -->
             <div class="hero-left">
                 <h1>RITUALS & SERVICES</h1>
                 <hr class="hero-line">
                 <p>Surrender to the process.</p>
             </div>
-            <!-- Right Side: Glassmorphic CTA -->
             <div class="hero-right">
-                <a href="#" class="btn-glass">BOOK A RITUAL</a>
+                <a href="#subscribe" class="btn-glass">BOOK A RITUAL</a>
             </div>
         </div>
     </header>
 
-    <!-- IMMERSIVE MOOD MENU SECTION -->
     <section class="mood-menu-section">
-        <!-- The Shifting Backgrounds (Tinted) -->
-        <div class="mood-bg active" id="bg-grounded" style="background-image: linear-gradient(rgba(26, 54, 34, 0.85), rgba(26, 54, 34, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%203.png');"></div>
-        <div class="mood-bg" id="bg-radiant" style="background-image: linear-gradient(rgba(45, 35, 25, 0.85), rgba(45, 35, 25, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20Image%201.png');"></div>
-        <div class="mood-bg" id="bg-detoxified" style="background-image: linear-gradient(rgba(15, 35, 40, 0.85), rgba(15, 35, 40, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%202.png');"></div>
-        <div class="mood-bg" id="bg-weightless" style="background-image: linear-gradient(rgba(30, 45, 35, 0.85), rgba(30, 45, 35, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/SocialMedia3.png');"></div>
+        <div class="mood-bg active" id="bg-grounded" style="background-image: linear-gradient(rgba(46, 26, 41, 0.85), rgba(46, 26, 41, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%203.png');"></div>
+        <div class="mood-bg" id="bg-radiant" style="background-image: linear-gradient(rgba(60, 40, 55, 0.85), rgba(60, 40, 55, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20Image%201.png');"></div>
+        <div class="mood-bg" id="bg-detoxified" style="background-image: linear-gradient(rgba(35, 20, 30, 0.85), rgba(35, 20, 30, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%202.png');"></div>
+        <div class="mood-bg" id="bg-weightless" style="background-image: linear-gradient(rgba(50, 35, 45, 0.85), rgba(50, 35, 45, 0.85)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/SocialMedia3.png');"></div>
 
         <div class="container mood-content-wrapper">
-            <!-- Sticky Filter Bar (No Brackets) -->
             <div class="mood-filter-bar">
                 <h3 class="mood-prompt">I WANT TO FEEL...</h3>
                 <div class="mood-buttons">
@@ -53,10 +55,7 @@
                 </div>
             </div>
 
-            <!-- Service Lists Container (Extended) -->
             <div class="mood-lists-container">
-                
-                <!-- GROUNDED LIST -->
                 <div class="mood-list active" id="list-grounded">
                     <div class="treatment-item">
                         <div class="treatment-header">
@@ -84,35 +83,8 @@
                             <a href="#" class="btn-reserve">Reserve This Ritual</a>
                         </div>
                     </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Reflexology Journey</h3>
-                                <span class="treatment-meta">45 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 650</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Peppermint Extract, Shea Butter, Tea Tree Oil.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Himalayan Salt Scrub</h3>
-                                <span class="treatment-meta">60 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 800</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Pink Mineral Salt, Bergamot, Virgin Coconut Oil.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- RADIANT LIST -->
                 <div class="mood-list" id="list-radiant">
                     <div class="treatment-item">
                         <div class="treatment-header">
@@ -127,48 +99,8 @@
                             <a href="#" class="btn-reserve">Reserve This Ritual</a>
                         </div>
                     </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Citrus Body Polish</h3>
-                                <span class="treatment-meta">45 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 650</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Crushed Walnut Shell, Grapefruit Essence, Jojoba Oil.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Anti-Aging Gold Facial</h3>
-                                <span class="treatment-meta">90 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 1,500</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: 24k Gold Leaf, Hyaluronic Acid, Lotus Flower.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Rose Quartz Gua Sha</h3>
-                                <span class="treatment-meta">45 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 700</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Rose Absolute, Squalane, Cooling Quartz.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- DETOXIFIED LIST -->
                 <div class="mood-list" id="list-detoxified">
                     <div class="treatment-item">
                         <div class="treatment-header">
@@ -183,48 +115,8 @@
                             <a href="#" class="btn-reserve">Reserve This Ritual</a>
                         </div>
                     </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Lymphatic Drainage</h3>
-                                <span class="treatment-meta">60 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 900</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Cypress Oil, Lemon Balm, Rosemary Extract.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Seaweed Body Wrap</h3>
-                                <span class="treatment-meta">75 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 1,100</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Wild-Harvested Kelp, Green Clay, Aloe Vera.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Cupping Therapy</h3>
-                                <span class="treatment-meta">45 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 650</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Botanicals: Massage Cupping, Ginger Root Oil, Warming Clove.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- WEIGHTLESS LIST -->
                 <div class="mood-list" id="list-weightless">
                     <div class="treatment-item">
                         <div class="treatment-header">
@@ -239,55 +131,14 @@
                             <a href="#" class="btn-reserve">Reserve This Ritual</a>
                         </div>
                     </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Acoustic Sound Bath</h3>
-                                <span class="treatment-meta">45 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 500</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Elements: Quartz Crystal Bowls, Binaural Beats, Guided Meditation.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Reiki Energy Healing</h3>
-                                <span class="treatment-meta">60 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 800</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Elements: Japanese Energy Transfer, Chakra Balancing, Frankincense Aromatherapy.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
-                    <div class="treatment-item">
-                        <div class="treatment-header">
-                            <div class="treatment-title-area">
-                                <h3>Craniosacral Therapy</h3>
-                                <span class="treatment-meta">45 MIN</span>
-                            </div>
-                            <span class="treatment-price">R 750</span>
-                        </div>
-                        <div class="treatment-expansion">
-                            <p class="botanicals">Key Elements: Light Touch Fascia Release, Deep Tissue Unwinding, Lavender.</p>
-                            <a href="#" class="btn-reserve">Reserve This Ritual</a>
-                        </div>
-                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- THE ETIQUETTE (WHITE SPACE BREAK) -->
     <section class="etiquette-section">
         <div class="container text-center">
-            <h2 class="editorial-heading" style="color: var(--forest-green); margin-bottom: 60px;">SPA ETIQUETTE</h2>
+            <h2 class="editorial-heading" style="color: var(--brand-anchor); margin-bottom: 60px;">SPA ETIQUETTE</h2>
             <div class="etiquette-grid">
                 <div class="etiquette-item">
                     <h4>Arrival</h4>
@@ -305,8 +156,19 @@
         </div>
     </section>
 
-    <!-- THE GIFT CARD SECTION (BOTTOM BOOKEND) -->
-    <section class="gift-card-section">
+    <section id="subscribe" class="newsletter-section" style="background-color: var(--brand-canvas); padding: 80px 20px; border-top: 1px solid rgba(46, 26, 41, 0.05);">
+        <div class="container text-center" style="max-width: 600px;">
+            <h2 class="editorial-heading" style="color: var(--brand-anchor); margin-bottom: 15px; font-size: 1.8rem;">THE INNER CIRCLE</h2>
+            <p style="color: var(--text-main); margin-bottom: 30px; font-size: 0.9rem;">Subscribe for exclusive seasonal curations and sanctuary news.</p>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <input type="email" id="subscriber-email" placeholder="Your email address" style="flex: 1; min-width: 250px; padding: 15px 25px; border-radius: 30px; border: 1px solid rgba(46, 26, 41, 0.2); outline: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; background: transparent; color: var(--text-main);">
+                <button onclick="submitEmail()" style="background: var(--brand-anchor); color: var(--brand-canvas); border: none; padding: 15px 35px; border-radius: 30px; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-weight: bold; transition: transform 0.3s;">Join</button>
+            </div>
+            <p id="subscription-msg" style="font-size: 0.8rem; margin-top: 15px; display: none;"></p>
+        </div>
+    </section>
+
+    <section class="gift-card-section" style="background-color: var(--brand-anchor);">
         <div class="container gift-grid">
             <div class="gift-text">
                 <h2 class="editorial-heading" style="color: #FFFFFF; margin-bottom: 20px;">THE GIFT OF SANCTUARY</h2>
@@ -319,13 +181,12 @@
         </div>
     </section>
 
-    <!-- STRICT DARK FOOTER -->
     <footer class="footer-dark">
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>Contact Us</h4>
-                <p>Email: hello@mediloopspa.co.za</p>
-                <p>Phone: +27 12 345 6789</p>
+                <p>Email: spa@allwellness.co.za</p>
+                <p>Phone: +27 64 683 4813</p>
             </div>
             <div class="footer-col">
                 <h4>Operating Hours</h4>
@@ -334,19 +195,29 @@
             </div>
             <div class="footer-col">
                 <h4>Legal</h4>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="https://mediloopsoftware.com/privacy" target="_blank">Privacy Policy</a>
+                <a href="https://mediloopsoftware.com/terms" target="_blank">Terms & Conditions</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Powered by <a href="https://mediloop.co.za">MediLoop Websites</a></p>
+            <p>Powered by <a href="https://mediloopsoftware.com" target="_blank">MediLoop Websites</a></p>
         </div>
     </footer>
 
-    <!-- INTERACTIVE MOOD MENU JAVASCRIPT -->
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: var(--brand-anchor); color: var(--brand-canvas); padding: 15px 20px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif; font-size: 0.85rem; box-sizing: border-box; display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <span>We use cookies to ensure you get the best experience on our website.</span>
+        <button onclick="acceptCookies()" style="padding: 8px 25px; background: var(--brand-canvas); color: var(--brand-anchor); border: none; border-radius: 20px; cursor: pointer; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem;">Got it</button>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Background Shifting Logic
+            // Cookie Check
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                const banner = document.getElementById('cookie-banner');
+                if (banner) banner.style.display = 'none';
+            }
+
+            // Interactive Mood Menu Logic
             const moodBtns = document.querySelectorAll('.mood-btn');
             const moodBgs = document.querySelectorAll('.mood-bg');
             const moodLists = document.querySelectorAll('.mood-list');
@@ -354,20 +225,16 @@
             moodBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
                     const target = btn.getAttribute('data-mood');
-                    
-                    // Remove active states
                     moodBtns.forEach(b => b.classList.remove('active'));
                     moodBgs.forEach(bg => bg.classList.remove('active'));
                     moodLists.forEach(list => list.classList.remove('active'));
-                    
-                    // Add active state to clicked elements
                     btn.classList.add('active');
                     document.getElementById('bg-' + target).classList.add('active');
                     document.getElementById('list-' + target).classList.add('active');
                 });
             });
 
-            // Treatment Accordion Expansion Logic
+            // Treatment Accordion Logic
             const treatmentHeaders = document.querySelectorAll('.treatment-header');
             treatmentHeaders.forEach(header => {
                 header.addEventListener('click', () => {
@@ -380,6 +247,54 @@
                 });
             });
         });
+
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        async function submitEmail() {
+            const emailInput = document.getElementById('subscriber-email');
+            const msgBox = document.getElementById('subscription-msg');
+            const email = emailInput.value.trim();
+
+            if (!email || !email.includes('@')) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = '#ff6b6b';
+                msgBox.innerText = "Please enter a valid email address.";
+                return;
+            }
+
+            // PASTE YOUR SUPABASE KEYS HERE 
+            const supabaseUrl = 'https://vafzjdqepmuunwqhzunz.supabase.co';
+            const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZhZnpqZHFlcG11dW53cWh6dW56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY4MTQyMjMsImV4cCI6MjA5MjM5MDIyM30.GlZa2vxvM6gFQ0iQes2ZV6twO3ASxLayuoZJsEyZNSQ';
+
+            try {
+                const response = await fetch(`${supabaseUrl}/rest/v1/mailing_list`, {
+                    method: 'POST',
+                    headers: {
+                        'apikey': supabaseKey,
+                        'Authorization': `Bearer ${supabaseKey}`,
+                        'Content-Type': 'application/json',
+                        'Prefer': 'return=minimal'
+                    },
+                    body: JSON.stringify({ email_address: email })
+                });
+
+                if (response.ok) {
+                    msgBox.style.display = 'block';
+                    msgBox.style.color = 'var(--brand-accent)'; 
+                    msgBox.innerText = "Welcome to the Inner Circle.";
+                    emailInput.value = ''; 
+                } else {
+                    throw new Error("Error");
+                }
+            } catch (error) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = 'var(--brand-medium)'; 
+                msgBox.innerText = "You are already on our list, or an error occurred.";
+            }
+        }
     </script>
 </body>
 </html>

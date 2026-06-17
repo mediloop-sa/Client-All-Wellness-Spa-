@@ -16,13 +16,15 @@
     --glass-light: rgba(251, 249, 246, 0.85); /* Rich fluid glass containers */
 }
 
-/* --- GLOBAL LAYOUT FIXES --- */
+/* --- GLOBAL LAYOUT FIXES (CRITICAL TO PREVENT OVERFLOW) --- */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 100vw;
     overflow-x: hidden; 
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -57,8 +59,12 @@ nav {
     justify-content: center;
     align-items: center;
 }
-nav a { 
-    margin: 0 15px; 
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.nav-links a { 
     text-decoration: none; 
     color: #FFFFFF; 
     font-size: 0.85rem; 
@@ -70,7 +76,7 @@ nav a {
     letter-spacing: 2px;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 }
-nav a:hover {
+.nav-links a:hover {
     color: var(--brand-accent); 
 }
 
@@ -97,6 +103,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    max-width: 600px; 
 }
 .hero-pre-title {
     font-family: 'Montserrat', sans-serif;

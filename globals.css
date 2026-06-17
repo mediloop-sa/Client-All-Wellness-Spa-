@@ -5,9 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@200;300;400;600&family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
-    --bg-pearl: #FDFDFD;
-    --forest-green: #1A3622;
-    --text-muted: #3A5642;
+    /* --- THE REBRAND ANCHORS (ALL WELLNESS SPA RESCUE) --- */
+    --brand-anchor: #2E1A29;     /* Deep Midnight Plum (Rich luxury base) */
+    --brand-medium: #8C7A87;     /* Soft Muted Mauve (Balanced text and elegant borders) */
+    --brand-canvas: #FBF9F6;     /* Warm Antique Linen (Creamy off-white base) */
+    --brand-accent: #8FA89B;     /* Calm Ethereal Sage (Honoring the original green) */
+    
+    /* --- COMPONENT FALLBACKS --- */
+    --text-main: #332230;        /* Highly legible charcoal-plum for paragraph text */
+    --glass-light: rgba(251, 249, 246, 0.85); /* Rich fluid glass containers */
 }
 
 /* --- GLOBAL LAYOUT FIXES --- */
@@ -21,8 +27,8 @@ html, body {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg-pearl);
-    color: var(--forest-green);
+    background-color: var(--brand-canvas);
+    color: var(--text-main);
     line-height: 1.8;
 }
 
@@ -42,9 +48,9 @@ h1, h2, h3, h4, .btn, .btn-glass-hero, .metric-number {
 
 /* --- PERFECTED TRANSPARENT NAVIGATION BAR --- */
 nav {
-    position: absolute; /* Keeps it purely at the top of the page without following down */
+    position: absolute; 
     top: 0; left: 0; width: 100%;
-    background-color: transparent; /* Completely clear */
+    background-color: transparent; 
     padding: 30px 0;
     z-index: 1000;
     display: flex;
@@ -62,10 +68,10 @@ nav a {
     white-space: nowrap; 
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ensures text is visible over the image */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 }
 nav a:hover {
-    color: var(--forest-green);
+    color: var(--brand-accent); /* Updated to Sage */
 }
 
 /* --- FULL-SCREEN HERO SECTION --- */
@@ -83,7 +89,7 @@ nav a:hover {
     content: '';
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.25); 
+    background: rgba(30, 18, 28, 0.4); /* Warmed up the dark overlay to match Plum */
 }
 .hero-content {
     position: relative;
@@ -103,7 +109,7 @@ nav a:hover {
 }
 .hero-main-title {
     margin: 0 0 20px 0;
-    line-height: 0.8; /* Pulls the words closer together */
+    line-height: 0.8; 
     text-align: center;
 }
 .serif-title {
@@ -115,13 +121,13 @@ nav a:hover {
 }
 .script-title {
     font-family: 'Great Vibes', cursive;
-    font-size: 7.5rem; /* Massive flowing script */
+    font-size: 7.5rem; 
     font-weight: 400;
     color: #FFFFFF;
     display: block;
-    margin-top: -25px; /* Overlaps it over the serif text */
-    margin-left: 60px; /* Pushes it slightly right for asymmetry */
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Adds the subtle glow from the photo */
+    margin-top: -25px; 
+    margin-left: 60px; 
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4); 
 }
 .hero-quote {
     font-size: 1rem;
@@ -138,7 +144,7 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 2px solid var(--forest-green); /* Thick green border */
+    border: 2px solid var(--brand-anchor); 
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 40px;
@@ -150,18 +156,18 @@ nav a:hover {
     text-shadow: 0 2px 10px rgba(0,0,0,0.4); 
 }
 .btn-glass-hero:hover {
-    background: var(--forest-green);
-    color: var(--bg-pearl);
+    background: var(--brand-anchor);
+    color: var(--brand-canvas);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(26, 54, 34, 0.3);
+    box-shadow: 0 10px 20px rgba(46, 26, 41, 0.3); /* Swapped RGB to Midnight Fig */
 }
 
 /* Regular button style kept for other elements if needed */
 .btn {
     display: inline-block;
     padding: 15px 70px; 
-    background-color: var(--forest-green);
-    color: var(--bg-pearl);
+    background-color: var(--brand-anchor);
+    color: var(--brand-canvas);
     text-decoration: none;
     border-radius: 30px;
     text-transform: uppercase;
@@ -171,7 +177,7 @@ nav a:hover {
 }
 .btn:hover { 
     transform: translateY(-3px); 
-    box-shadow: 0 10px 20px rgba(26, 54, 34, 0.2); 
+    box-shadow: 0 10px 20px rgba(46, 26, 41, 0.2); 
 }
 
 /* --- WELCOME SECTION --- */
@@ -188,12 +194,12 @@ nav a:hover {
     margin-bottom: 30px; 
     text-transform: uppercase; 
     letter-spacing: 6px; 
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     line-height: 1.4;
 }
 .welcome-text p {
     font-size: 1rem;
-    color: var(--text-muted);
+    color: var(--brand-medium);
     margin-bottom: 20px;
     line-height: 2; 
 }
@@ -208,7 +214,7 @@ nav a:hover {
     align-items: center;
 }
 .metrics-glass-box {
-    background: rgba(255, 255, 255, 0.65);
+    background: var(--glass-light);
     max-width: 1100px;
     width: 100%;
     padding: 80px 40px;
@@ -224,7 +230,7 @@ nav a:hover {
     font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     margin-bottom: 60px;
 }
 .cards-grid {
@@ -238,8 +244,8 @@ nav a:hover {
     height: 320px; 
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 0 25px rgba(26, 54, 34, 0.4); 
-    border: 1px solid rgba(26, 54, 34, 0.2);
+    box-shadow: 0 0 25px rgba(46, 26, 41, 0.4); 
+    border: 1px solid rgba(46, 26, 41, 0.2);
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -250,25 +256,25 @@ nav a:hover {
 }
 .metric-circle:hover { 
     transform: translateY(-8px); 
-    box-shadow: 0 10px 40px rgba(26, 54, 34, 0.65); 
+    box-shadow: 0 10px 40px rgba(46, 26, 41, 0.65); 
 }
 .metric-number { 
     font-size: 3rem; 
     font-weight: 200; 
     margin: 0 0 10px 0; 
-    color: var(--forest-green); 
+    color: var(--brand-anchor); 
 }
 .metric-circle h4 { 
     font-size: 0.85rem; 
     font-weight: 600; 
     text-transform: uppercase; 
     margin: 0; 
-    color: var(--text-muted); 
+    color: var(--brand-medium); 
     letter-spacing: 2px;
 }
 .metric-circle p {
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--brand-medium);
     margin-top: 10px;
     margin-bottom: 0;
     line-height: 1.6;
@@ -279,7 +285,7 @@ nav a:hover {
 
 /* --- EDITORIAL RITUALS SECTION (DARK SCROLLABLE) --- */
 .editorial-rituals {
-    background-color: var(--forest-green); 
+    background-color: var(--brand-anchor); 
     padding: 120px 0 80px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     position: relative; 
@@ -367,7 +373,7 @@ nav a:hover {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(80, 60, 40, 0.75); 
+    background: rgba(46, 26, 41, 0.85); /* Shifted to heavy fig overlay */
     z-index: 1;
 }
 .press-content {
@@ -435,7 +441,7 @@ nav a:hover {
 /* --- STACKED ALBUM SOCIALS SECTION --- */
 .socials-section { 
     padding: 120px 20px; 
-    background-color: var(--bg-pearl);
+    background-color: var(--brand-canvas);
 }
 .socials-heading {
     font-family: 'Montserrat', sans-serif;
@@ -443,20 +449,20 @@ nav a:hover {
     font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     margin-bottom: 10px;
 }
 .social-handle {
     display: inline-block;
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--brand-medium);
     letter-spacing: 2px;
     margin-bottom: 60px;
     text-decoration: none;
     transition: color 0.3s;
 }
 .social-handle:hover {
-    color: var(--forest-green);
+    color: var(--brand-accent);
 }
 .socials-stack {
     position: relative;
@@ -490,8 +496,8 @@ nav a:hover {
 }
 .social-btn {
     padding: 12px 40px; 
-    border: 1px solid var(--forest-green);
-    color: var(--forest-green); 
+    border: 1px solid var(--brand-anchor);
+    color: var(--brand-anchor); 
     text-decoration: none; 
     border-radius: 30px; 
     font-family: 'Montserrat', sans-serif;
@@ -502,8 +508,8 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 .social-btn:hover { 
-    background: var(--forest-green); 
-    color: var(--bg-pearl); 
+    background: var(--brand-anchor); 
+    color: var(--brand-canvas); 
 }
 
 /* --- STRICT DARK FOOTER --- */
@@ -547,7 +553,7 @@ nav a:hover {
     content: '';
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(26, 54, 34, 0.4); 
+    background: rgba(46, 26, 41, 0.4); 
 }
 .reveal-text {
     opacity: 0;
@@ -564,7 +570,7 @@ nav a:hover {
 /* 2. Philosophy Infinite Vertical Scroll */
 .philosophy-sticky-section {
     padding: 120px 20px;
-    background-color: var(--bg-pearl);
+    background-color: var(--brand-canvas);
 }
 .philosophy-grid {
     display: grid;
@@ -578,7 +584,7 @@ nav a:hover {
 }
 .philosophy-text-sticky p {
     font-size: 1rem;
-    color: var(--text-muted);
+    color: var(--text-main);
     line-height: 2;
     margin-bottom: 25px;
     font-weight: 300;
@@ -615,12 +621,12 @@ nav a:hover {
 /* 3. The Quote Break */
 .quote-break-section {
     padding: 80px 20px;
-    background-color: var(--bg-pearl); 
+    background-color: var(--brand-canvas); 
 }
 .slick-fade-line {
     border: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(26, 54, 34, 0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(46, 26, 41, 0.4), transparent);
     width: 100%;
     margin: 0 auto;
 }
@@ -629,7 +635,7 @@ nav a:hover {
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 300;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     margin: 40px 0 20px 0;
     line-height: 1.6;
 }
@@ -638,21 +644,21 @@ nav a:hover {
     font-size: 0.75rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--brand-medium);
     margin-bottom: 40px;
 }
 
 /* 4. Expanding Image Accordion */
 .accordion-section {
     padding: 120px 20px;
-    background-color: var(--bg-pearl);
+    background-color: var(--brand-canvas);
 }
 .accordion-hint {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: rgba(26, 54, 34, 0.4); 
+    color: rgba(46, 26, 41, 0.4); 
     margin-bottom: 50px; 
 }
 .accordion-container {
@@ -679,7 +685,7 @@ nav a:hover {
 .accordion-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(26, 54, 34, 0.6); 
+    background: rgba(46, 26, 41, 0.6); 
     transition: background 0.6s ease;
     display: flex;
     align-items: center;
@@ -727,7 +733,7 @@ nav a:hover {
 .manifesto-marquee {
     position: relative;
     height: 250px; 
-    background-color: var(--forest-green);
+    background-color: var(--brand-anchor);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,7 +852,7 @@ nav a:hover {
 }
 .mood-btn:hover, .mood-btn.active {
     background: #FFFFFF;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     border-color: #FFFFFF;
 }
 
@@ -914,7 +920,7 @@ nav a:hover {
     display: inline-block;
     padding: 10px 30px;
     background: #FFFFFF;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     text-decoration: none;
     border-radius: 30px;
     font-size: 0.75rem;
@@ -930,7 +936,7 @@ nav a:hover {
 
 /* --- The Etiquette Section (White Space Break) --- */
 .etiquette-section {
-    background-color: var(--bg-pearl);
+    background-color: var(--brand-canvas);
     padding: 120px 20px;
 }
 .etiquette-grid {
@@ -944,20 +950,20 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 .etiquette-item p {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--text-main);
     line-height: 1.8;
 }
 
 /* 4. The Gift Card Bookend Section */
 .gift-card-section {
-    background-color: rgba(20, 40, 25, 1); /* Very dark olive/forest green */
+    background-color: var(--brand-anchor); 
     padding: 120px 20px;
 }
 .gift-grid {
@@ -987,7 +993,7 @@ nav a:hover {
 }
 .btn-transparent:hover {
     background: #FFFFFF;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
 }
 .gift-image img {
     width: 100%;
@@ -1004,7 +1010,7 @@ nav a:hover {
 /* 1. Monthly Curations (Asymmetric Overlap) */
 .curations-section {
     padding: 120px 20px;
-    background-color: var(--bg-pearl);
+    background-color: var(--brand-canvas);
 }
 .curation-block {
     display: flex;
@@ -1029,7 +1035,7 @@ nav a:hover {
     backdrop-filter: blur(15px);
     padding: 50px;
     border-radius: 20px;
-    border: 1px solid rgba(26, 54, 34, 0.1);
+    border: 1px solid rgba(46, 26, 41, 0.1);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     margin-left: -10%; /* Creates the elegant overlap */
     text-align: left;
@@ -1045,8 +1051,8 @@ nav a:hover {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: var(--forest-green);
-    border-bottom: 1px solid var(--forest-green);
+    color: var(--brand-accent);
+    border-bottom: 1px solid var(--brand-accent);
     padding-bottom: 5px;
     margin-bottom: 20px;
     display: inline-block;
@@ -1055,18 +1061,18 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 2rem;
-    color: var(--forest-green);
+    color: var(--brand-anchor);
     margin: 0 0 15px 0;
 }
 .curation-card p {
-    color: var(--text-muted);
+    color: var(--brand-medium);
     line-height: 1.8;
     margin-bottom: 30px;
 }
 
 /* 2. The Passport Timeline */
 .passport-section {
-    background-color: var(--forest-green);
+    background-color: var(--brand-anchor);
     padding: 120px 20px;
     position: relative;
 }
@@ -1109,7 +1115,7 @@ nav a:hover {
     width: 15px;
     height: 15px;
     right: -8px;
-    background-color: var(--bg-pearl);
+    background-color: var(--brand-canvas);
     border-radius: 50%;
     top: 20px;
     z-index: 1;
@@ -1158,7 +1164,7 @@ nav a:hover {
 /* Parallax Background for the Feed */
 .journal-feed-section {
     padding: 120px 20px;
-    background: linear-gradient(rgba(15, 30, 20, 0.9), rgba(15, 30, 20, 0.9)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%202.png') center/cover no-repeat;
+    background: linear-gradient(rgba(46, 26, 41, 0.9), rgba(46, 26, 41, 0.9)), url('https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%202.png') center/cover no-repeat;
     background-attachment: fixed; /* Creates the parallax scrolling effect */
     position: relative;
 }
@@ -1275,7 +1281,7 @@ nav a:hover {
 
 .subpage-hero-new {
     height: 45vh; 
-    background-color: var(--forest-green); 
+    background-color: var(--brand-anchor); 
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);

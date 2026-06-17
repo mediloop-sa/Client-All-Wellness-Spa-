@@ -5,72 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediLoop | Sanctuary Rewards</title>
     <link rel="stylesheet" href="globals.css">
+    <style>
+        nav { justify-content: space-between !important; padding: 30px 60px !important; }
+        @media (max-width: 768px) { nav { padding: 20px !important; flex-direction: column; gap: 20px; } }
+    </style>
 </head>
 <body>
 
-         <!-- PERFECTED NAVIGATION BAR -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="rituals.html">Rituals</a>
-        <a href="rewards.html">Rewards</a>
-        <a href="press.html">Press</a>
+        <a href="index.html" style="margin: 0; padding: 0;">
+            <img src="1000119984.png" alt="All Wellness Spa" style="height: 65px; filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,0.3));">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rituals.html">Rituals</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="press.html">Press</a>
+        </div>
     </nav>
 
-        <!-- NEW SPLIT EDITORIAL HERO -->
     <header class="hero subpage-hero-new">
         <div class="container hero-split">
-            <!-- Left Side: Typography -->
             <div class="hero-left">
                 <h1>PRIVILEGES</h1>
                 <hr class="hero-line">
                 <p>Exclusive rewards for our inner circle.</p>
             </div>
-            <!-- Right Side: Glassmorphic CTA -->
             <div class="hero-right">
-                <a href="#" class="btn-glass">JOIN THE CIRCLE</a>
+                <a href="#subscribe" class="btn-glass">JOIN THE CIRCLE</a>
             </div>
         </div>
     </header>
 
-    <!-- THE MONTHLY CURATIONS (SPECIALS) -->
-    <section class="curations-section">
+    <section class="curations-section" style="background-color: var(--brand-canvas);">
         <div class="container text-center">
-            <h2 class="editorial-heading" style="color: var(--forest-green); margin-bottom: 20px;">SEASONAL CURATIONS</h2>
-            <p class="accordion-hint" style="margin-bottom: 60px;">Exclusive for the current month</p>
-            
-            <!-- Curation 1 -->
+            <h2 class="editorial-heading" style="color: var(--brand-anchor); margin-bottom: 20px;">SEASONAL CURATIONS</h2>
+            <p class="accordion-hint" style="margin-bottom: 60px; color: var(--brand-medium);">Exclusive for the current month</p>
+
             <div class="curation-block">
                 <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20Image%201.png" alt="Facial Reward" class="curation-img">
                 <div class="curation-card">
                     <span class="curation-tag">June Privilege</span>
                     <h3>The Luminous Upgrade</h3>
                     <p>Reserve any 60-minute Facial Ritual this month, and receive a complimentary 24k Gold Eye Treatment and targeted lymphatic massage.</p>
-                    <a href="#" class="btn-reserve" style="color: var(--bg-pearl); background: var(--forest-green); margin-top: 20px;">Claim Reward</a>
+                    <a href="#" class="btn-reserve" style="color: var(--brand-canvas); background: var(--brand-anchor); margin-top: 20px;">Claim Reward</a>
                 </div>
             </div>
 
-            <!-- Curation 2 -->
             <div class="curation-block reverse">
                 <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%203.png" alt="Massage Reward" class="curation-img">
                 <div class="curation-card">
                     <span class="curation-tag">Mid-Week Escape</span>
                     <h3>The Deep Restore</h3>
                     <p>Visit us between Tuesday and Thursday before 2 PM, and enjoy an extended 30 minutes of deep tissue focus on your highest tension areas, entirely on us.</p>
-                    <a href="#" class="btn-reserve" style="color: var(--bg-pearl); background: var(--forest-green); margin-top: 20px;">Claim Reward</a>
+                    <a href="#" class="btn-reserve" style="color: var(--brand-canvas); background: var(--brand-anchor); margin-top: 20px;">Claim Reward</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- THE PASSPORT THREAD (LOYALTY GIFTS) -->
-    <section class="passport-section">
+    <section class="passport-section" style="background-color: var(--brand-anchor);">
         <div class="container text-center">
             <h2 class="editorial-heading" style="color: #FFFFFF; margin-bottom: 20px;">THE PASSPORT</h2>
             <p class="accordion-hint" style="color: rgba(255,255,255,0.6); margin-bottom: 80px;">How your devotion is rewarded</p>
 
             <div class="passport-timeline">
-                <!-- Milestone 1 -->
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <h4>Milestone I</h4>
@@ -78,7 +78,6 @@
                         <p>Upon your second visit, enjoy a complimentary custom botanical blend crafted specifically for your skin's needs.</p>
                     </div>
                 </div>
-                <!-- Milestone 2 -->
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <h4>Milestone II</h4>
@@ -86,7 +85,6 @@
                         <p>After five completed rituals, we gift you a 45-minute enhancement of your choice to add to your next booking.</p>
                     </div>
                 </div>
-                <!-- Milestone 3 -->
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <h4>Milestone III</h4>
@@ -94,7 +92,6 @@
                         <p>Upon your tenth ritual, experience absolute surrender with a fully complimentary 90-minute Signature Journey on us.</p>
                     </div>
                 </div>
-                <!-- Milestone 4 -->
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <h4>Annual Privilege</h4>
@@ -106,10 +103,9 @@
         </div>
     </section>
 
-    <!-- THE ETIQUETTE (WHITE SPACE BREAK) -->
     <section class="etiquette-section">
         <div class="container text-center">
-            <h2 class="editorial-heading" style="color: var(--forest-green); margin-bottom: 60px;">THE SANCTUARY PROMISE</h2>
+            <h2 class="editorial-heading" style="color: var(--brand-anchor); margin-bottom: 60px;">THE SANCTUARY PROMISE</h2>
             <div class="etiquette-grid">
                 <div class="etiquette-item">
                     <h4>Automatic Tracking</h4>
@@ -127,13 +123,24 @@
         </div>
     </section>
 
-    <!-- STRICT DARK FOOTER -->
+    <section id="subscribe" class="newsletter-section" style="background-color: var(--brand-canvas); padding: 80px 20px; border-top: 1px solid rgba(46, 26, 41, 0.05);">
+        <div class="container text-center" style="max-width: 600px;">
+            <h2 class="editorial-heading" style="color: var(--brand-anchor); margin-bottom: 15px; font-size: 1.8rem;">THE INNER CIRCLE</h2>
+            <p style="color: var(--text-main); margin-bottom: 30px; font-size: 0.9rem;">Subscribe for exclusive seasonal curations and sanctuary news.</p>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <input type="email" id="subscriber-email" placeholder="Your email address" style="flex: 1; min-width: 250px; padding: 15px 25px; border-radius: 30px; border: 1px solid rgba(46, 26, 41, 0.2); outline: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; background: transparent; color: var(--text-main);">
+                <button onclick="submitEmail()" style="background: var(--brand-anchor); color: var(--brand-canvas); border: none; padding: 15px 35px; border-radius: 30px; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-weight: bold; transition: transform 0.3s;">Join</button>
+            </div>
+            <p id="subscription-msg" style="font-size: 0.8rem; margin-top: 15px; display: none;"></p>
+        </div>
+    </section>
+
     <footer class="footer-dark">
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>Contact Us</h4>
-                <p>Email: hello@mediloopspa.co.za</p>
-                <p>Phone: +27 12 345 6789</p>
+                <p>Email: spa@allwellness.co.za</p>
+                <p>Phone: +27 64 683 4813</p>
             </div>
             <div class="footer-col">
                 <h4>Operating Hours</h4>
@@ -142,14 +149,75 @@
             </div>
             <div class="footer-col">
                 <h4>Legal</h4>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="https://mediloopsoftware.com/privacy" target="_blank">Privacy Policy</a>
+                <a href="https://mediloopsoftware.com/terms" target="_blank">Terms & Conditions</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Powered by <a href="https://mediloop.co.za">MediLoop Websites</a></p>
+            <p>Powered by <a href="https://mediloopsoftware.com" target="_blank">MediLoop Websites</a></p>
         </div>
     </footer>
 
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: var(--brand-anchor); color: var(--brand-canvas); padding: 15px 20px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif; font-size: 0.85rem; box-sizing: border-box; display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <span>We use cookies to ensure you get the best experience on our website.</span>
+        <button onclick="acceptCookies()" style="padding: 8px 25px; background: var(--brand-canvas); color: var(--brand-anchor); border: none; border-radius: 20px; cursor: pointer; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem;">Got it</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                const banner = document.getElementById('cookie-banner');
+                if (banner) banner.style.display = 'none';
+            }
+        });
+
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        async function submitEmail() {
+            const emailInput = document.getElementById('subscriber-email');
+            const msgBox = document.getElementById('subscription-msg');
+            const email = emailInput.value.trim();
+
+            if (!email || !email.includes('@')) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = '#ff6b6b';
+                msgBox.innerText = "Please enter a valid email address.";
+                return;
+            }
+
+            // PASTE YOUR SUPABASE KEYS HERE 
+            const supabaseUrl = 'https://vafzjdqepmuunwqhzunz.supabase.co';
+            const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZhZnpqZHFlcG11dW53cWh6dW56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY4MTQyMjMsImV4cCI6MjA5MjM5MDIyM30.GlZa2vxvM6gFQ0iQes2ZV6twO3ASxLayuoZJsEyZNSQ';
+
+            try {
+                const response = await fetch(`${supabaseUrl}/rest/v1/mailing_list`, {
+                    method: 'POST',
+                    headers: {
+                        'apikey': supabaseKey,
+                        'Authorization': `Bearer ${supabaseKey}`,
+                        'Content-Type': 'application/json',
+                        'Prefer': 'return=minimal'
+                    },
+                    body: JSON.stringify({ email_address: email })
+                });
+
+                if (response.ok) {
+                    msgBox.style.display = 'block';
+                    msgBox.style.color = 'var(--brand-accent)'; 
+                    msgBox.innerText = "Welcome to the Inner Circle.";
+                    emailInput.value = ''; 
+                } else {
+                    throw new Error("Error");
+                }
+            } catch (error) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = 'var(--brand-medium)'; 
+                msgBox.innerText = "You are already on our list, or an error occurred.";
+            }
+        }
+    </script>
 </body>
 </html>

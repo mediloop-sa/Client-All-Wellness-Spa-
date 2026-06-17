@@ -5,73 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediLoop Wellness Template</title>
     <link rel="stylesheet" href="globals.css">
+    <style>
+        nav { justify-content: space-between !important; padding: 30px 60px !important; }
+        @media (max-width: 768px) { nav { padding: 20px !important; flex-direction: column; gap: 20px; } }
+    </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="rituals.html">Rituals</a>
-        <a href="rewards.html">Rewards</a>
-        <a href="press.html">Press</a>
+        <a href="index.html" style="margin: 0; padding: 0;">
+            <img src="1000119984.png" alt="All Wellness Spa" style="height: 65px; filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,0.3));">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rituals.html">Rituals</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="press.html">Press</a>
+        </div>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
             <h2 class="hero-pre-title">ALL WELLNESS SPA</h2>
-
             <h1 class="hero-main-title">
                 <span class="serif-title">A MOMENT</span><br>
                 <span class="script-title">Away</span>
             </h1>
-
             <p class="hero-quote">A serene space for beauty, balance, and self-care.</p>
-
             <a href="#welcome" class="btn-glass-hero">Book Now</a>
         </div>
     </header>
 
     <section id="welcome" class="welcome-section">
         <div class="welcome-text">
-            <h2>WELCOME TO ALL WELLNESS SPA</h2>
-            <p>Step into a world where time slows down. Our sanctuary is designed to help you disconnect from the noise of the modern world and reconnect with your inner peace. Every detail, from the ambient lighting to the curated aromas, has been meticulously crafted to elevate your wellness journey.</p>
-            <p>Allow our expert therapists to guide you through personalized rituals that restore balance, rejuvenate your spirit, and leave you feeling profoundly renewed.</p>
+            <h2 style="color: var(--brand-anchor);">WELCOME TO ALL WELLNESS SPA</h2>
+            <p style="color: var(--brand-medium);">Step into a world where time slows down. Our sanctuary is designed to help you disconnect from the noise of the modern world and reconnect with your inner peace. Every detail, from the ambient lighting to the curated aromas, has been meticulously crafted to elevate your wellness journey.</p>
+            <p style="color: var(--brand-medium);">Allow our expert therapists to guide you through personalized rituals that restore balance, rejuvenate your spirit, and leave you feeling profoundly renewed.</p>
         </div>
     </section>
 
     <section id="metrics" class="metrics-section">
         <div class="metrics-glass-box">
-            <h2 class="section-title text-center">Sanctuary Impact</h2>
+            <h2 class="section-title text-center" style="color: var(--brand-anchor);">Sanctuary Impact</h2>
             <div class="cards-grid">
                 <div class="metric-circle">
                     <div>
-                        <h3 class="metric-number" data-target="15000" data-suffix="+">0</h3>
-                        <h4>Treatments Given</h4>
-                        <p>Curating thousands of personalized journeys to pure, profound relaxation.</p>
+                        <h3 class="metric-number" data-target="15000" data-suffix="+" style="color: var(--brand-anchor);">0</h3>
+                        <h4 style="color: var(--brand-medium);">Treatments Given</h4>
+                        <p style="color: var(--brand-medium);">Curating thousands of personalized journeys to pure, profound relaxation.</p>
                     </div>
                 </div>
                 <div class="metric-circle">
                     <div>
-                        <h3 class="metric-number" data-target="4.5" data-suffix="/5">0</h3>
-                        <h4>Review Rate</h4>
-                        <p>A tranquil sanctuary completely trusted and cherished by our community.</p>
+                        <h3 class="metric-number" data-target="4.5" data-suffix="/5" style="color: var(--brand-anchor);">0</h3>
+                        <h4 style="color: var(--brand-medium);">Review Rate</h4>
+                        <p style="color: var(--brand-medium);">A tranquil sanctuary completely trusted and cherished by our community.</p>
                     </div>
                 </div>
                 <div class="metric-circle">
                     <div>
-                        <h3 class="metric-number" data-target="5" data-suffix=" Years">0</h3>
-                        <h4>Combined Experience</h4>
-                        <p>Expert hands guided by a deep, refined legacy of holistic healing.</p>
+                        <h3 class="metric-number" data-target="5" data-suffix=" Years" style="color: var(--brand-anchor);">0</h3>
+                        <h4 style="color: var(--brand-medium);">Combined Experience</h4>
+                        <p style="color: var(--brand-medium);">Expert hands guided by a deep, refined legacy of holistic healing.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="rituals" class="editorial-rituals">
+    <section id="rituals" class="editorial-rituals" style="background-color: var(--brand-anchor);">
         <div class="container">
             <h2 class="editorial-heading text-center">SIGNATURE RITUALS</h2>
-
             <div class="editorial-scroll-container">
                 <div class="editorial-card">
                     <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Spa%20image%203.png" alt="Deep Tissue" class="editorial-img">
@@ -98,7 +103,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="scroll-indicator">Scroll <span>&#8594;</span></div>
         </div>
     </section>
@@ -126,23 +130,33 @@
         </div>
     </section>
 
-    <section class="socials-section">
+    <section class="socials-section" style="background-color: var(--brand-canvas);">
         <div class="container text-center">
-            <h2 class="socials-heading">JOIN OUR SANCTUARY</h2>
-            <a href="#" class="social-handle">@allwellnessspa</a>
-
+            <h2 class="socials-heading" style="color: var(--brand-anchor);">JOIN OUR SANCTUARY</h2>
+            <a href="#" class="social-handle" style="color: var(--brand-medium);">@allwellnessspa</a>
             <div class="socials-stack">
                 <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/SocialMedia3.png" alt="Spa aesthetic 1" class="social-img stack-1">
                 <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Social%20Media.png" alt="Spa aesthetic 2" class="social-img stack-2">
                 <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Social%20Media%204.png" alt="Spa aesthetic 3" class="social-img stack-3">
                 <img src="https://vafzjdqepmuunwqhzunz.supabase.co/storage/v1/object/public/branding/Social%20Media%202.png" alt="Spa aesthetic 4" class="social-img stack-top">
             </div>
-
             <div class="social-buttons">
                 <a href="#" class="social-btn">Instagram</a>
                 <a href="#" class="social-btn">Facebook</a>
                 <a href="#" class="social-btn">TikTok</a>
             </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section" style="background-color: var(--brand-canvas); padding: 80px 20px; border-top: 1px solid rgba(46, 26, 41, 0.05);">
+        <div class="container text-center" style="max-width: 600px;">
+            <h2 class="editorial-heading" style="color: var(--brand-anchor); margin-bottom: 15px; font-size: 1.8rem;">THE INNER CIRCLE</h2>
+            <p style="color: var(--text-main); margin-bottom: 30px; font-size: 0.9rem;">Subscribe for exclusive seasonal curations and sanctuary news.</p>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <input type="email" id="subscriber-email" placeholder="Your email address" style="flex: 1; min-width: 250px; padding: 15px 25px; border-radius: 30px; border: 1px solid rgba(46, 26, 41, 0.2); outline: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; background: transparent; color: var(--text-main);">
+                <button onclick="submitEmail()" style="background: var(--brand-anchor); color: var(--brand-canvas); border: none; padding: 15px 35px; border-radius: 30px; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-weight: bold; transition: transform 0.3s;">Join</button>
+            </div>
+            <p id="subscription-msg" style="font-size: 0.8rem; margin-top: 15px; display: none;"></p>
         </div>
     </section>
 
@@ -169,8 +183,20 @@
         </div>
     </footer>
 
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: var(--brand-anchor); color: var(--brand-canvas); padding: 15px 20px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif; font-size: 0.85rem; box-sizing: border-box; display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <span>We use cookies to ensure you get the best experience on our website.</span>
+        <button onclick="acceptCookies()" style="padding: 8px 25px; background: var(--brand-canvas); color: var(--brand-anchor); border: none; border-radius: 20px; cursor: pointer; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem;">Got it</button>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Cookie Init
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                const banner = document.getElementById('cookie-banner');
+                if (banner) banner.style.display = 'none';
+            }
+
+            // Metrics Animation
             const counters = document.querySelectorAll('.metric-number');
             const animateCounters = () => {
                 counters.forEach(counter => {
@@ -201,7 +227,6 @@
             };
 
             const slideElements = document.querySelectorAll('.slide-in');
-
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if(entry.isIntersecting && entry.target.classList.contains('metrics-section')) {
@@ -217,9 +242,56 @@
 
             const metricsSection = document.querySelector('.metrics-section');
             if(metricsSection) observer.observe(metricsSection);
-
             slideElements.forEach(el => observer.observe(el));
         });
+
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        async function submitEmail() {
+            const emailInput = document.getElementById('subscriber-email');
+            const msgBox = document.getElementById('subscription-msg');
+            const email = emailInput.value.trim();
+
+            if (!email || !email.includes('@')) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = '#ff6b6b';
+                msgBox.innerText = "Please enter a valid email address.";
+                return;
+            }
+
+            // PASTE YOUR SUPABASE KEYS HERE 
+            const supabaseUrl = 'https://vafzjdqepmuunwqhzunz.supabase.co';
+            const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZhZnpqZHFlcG11dW53cWh6dW56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY4MTQyMjMsImV4cCI6MjA5MjM5MDIyM30.GlZa2vxvM6gFQ0iQes2ZV6twO3ASxLayuoZJsEyZNSQ';
+
+            try {
+                const response = await fetch(`${supabaseUrl}/rest/v1/mailing_list`, {
+                    method: 'POST',
+                    headers: {
+                        'apikey': supabaseKey,
+                        'Authorization': `Bearer ${supabaseKey}`,
+                        'Content-Type': 'application/json',
+                        'Prefer': 'return=minimal'
+                    },
+                    body: JSON.stringify({ email_address: email })
+                });
+
+                if (response.ok) {
+                    msgBox.style.display = 'block';
+                    msgBox.style.color = 'var(--brand-accent)'; 
+                    msgBox.innerText = "Welcome to the Inner Circle.";
+                    emailInput.value = ''; 
+                } else {
+                    throw new Error("Error");
+                }
+            } catch (error) {
+                msgBox.style.display = 'block';
+                msgBox.style.color = 'var(--brand-medium)'; 
+                msgBox.innerText = "You are already on our list, or an error occurred.";
+            }
+        }
     </script>
 </body>
 </html>
